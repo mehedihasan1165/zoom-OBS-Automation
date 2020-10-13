@@ -2,11 +2,11 @@
 An Automation script to automatically join a scheduled zoom meeting at a specific time and record the meeting with obs studio without manual labour.
 
 ## Requirements 
-- [x] python version above 3.5
-- [x] Obs Studio (x64-bit)
-- [x] Updated Zoom Software (Signed in)
-- [x] pyautogui package
-- [x] schedule package
+-  python version above 3.5
+-  Obs Studio (x64-bit)
+-  Updated Zoom Software (Signed in)
+-  pyautogui package
+-  schedule package
 
 #### To install the above packages :
 + To [Download Python](https://www.python.org/downloads/)
