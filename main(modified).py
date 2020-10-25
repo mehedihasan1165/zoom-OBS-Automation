@@ -8,12 +8,12 @@ print('\nEnter the following details regarding the meeting to set it up...')
 print('Read the README.md file before going any further')
 print('\nYou can exit this program using ( Ctrl+c ) at any time\n')
 meet_id = input('Enter Meeting ID: ')
-password = input('Enter Meeting password: ')
+password = input('Enter Meeting password(If the meeting does not have a password press "ENTER"): ')
 meet_time = input('Enter everyday meeting time in 24hour format (eg: "22:45" for 10:45pm): ')
 total_meet = input('How long will the meeting last for ?(Answer in minutes eg:60 for 1 hour): ')
 total_meet = int(total_meet) * 60
 meeting_time = str(meet_time)
-
+password_check=len(password)
 
 def obs_recording_start():
     pyautogui.press('win', interval=1.5)
@@ -45,8 +45,9 @@ def zoom():
     pyautogui.press('enter', interval=5)
     pyautogui.write(meet_id)
     pyautogui.press('enter', interval=5)
-    pyautogui.write(password)
-    pyautogui.press('enter', interval=10)
+    if password_check > 0:
+        pyautogui.write(password)
+        pyautogui.press('enter', interval=10)
     time.sleep(total_meet)
     os.system('TASKKILL /F /IM Zoom.exe')
     time.sleep(0.5)

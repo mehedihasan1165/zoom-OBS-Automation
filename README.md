@@ -35,6 +35,7 @@ An Automation script to automatically join a scheduled zoom meeting at a specifi
   * Alternatively you can also run the `main.py` for the same result but `run.bat` is preferred
 * *Finally after the cmd is opened read the instructions thoroughly and proceed by entering your zoom meeting info*
 * *Make sure you enter the "Meeting ID and Meeting Password" correctly or else the program would crash*
+* If meeting has password, only session id then leave the password field blank (just press *ENTER*).
 * Format for the Recurring Meeting Time should be in 24 Hour format
   * Eg: `10:45` for 10:45am and `22:45` for 10:45pm 
 * Total Meeting time is entered in `minutes` format
